@@ -59,13 +59,12 @@
     "dragDrop": true
   },
   "images": {
-    "list": "modules/facebookfeed/images/list.png",
+    "list": "modules/facebookfeed/images/facebook_list.png",
     "screenshots": [
-      "modules/facebookfeed/images/screenshot01.png",
-      "modules/facebookfeed/images/screenshot02.png"
+      "modules/facebookfeed/images/facebookfeed_screenshot01.png"
     ],
-    "popover": "modules/facebookfeed/images/popover.png",
-    "banner": "modules/facebookfeed/images/banner.png",
-    "logo": "modules/facebookfeed/images/logo.png"
+    "popover": "modules/facebookfeed/images/facebook_popover.png",
+    "banner": "modules/facebookfeed/images/facebook_popover.png",
+    "logo": "modules/facebookfeed/images/Facebook_icon.png"
   }
 }
