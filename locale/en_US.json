@@ -1,3 +1,4 @@
 {
-"facebookfeed.feed.error" : "Opps! There was a problem loading the feed!"
+"facebookfeed.feed.error" : "Opps! There was a problem loading the feed!",
+"facebookfeed.dateFormat" : "MM/DD/YYYY"
 }
