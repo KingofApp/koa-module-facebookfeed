@@ -15,7 +15,7 @@
   },
   "icon": "facebook",
   "type": "A",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "King of App",
   "category": [
     "others"
@@ -41,7 +41,8 @@
   ],
   "scope": {
     "accesstoken": "",
-    "pageid": ""
+    "pageid": "",
+    "visualization": "card"
   },
   "config": [{
     "templateOptions": {
@@ -59,6 +60,18 @@
       "description": "id de la pagina"
     },
     "type": "input"
+  },
+  {
+    "type": "select",
+    "key": "visualization",
+    "templateOptions": {
+      "description": "Select type of visualization",
+      "label": "visualization",
+      "options": [
+        {"name": "Card", "value": "card" },
+        {"name": "List", "value": "list" }
+      ]
+    }
   }],
   "showOn": {
     "menu": true,

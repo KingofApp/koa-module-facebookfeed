@@ -7,9 +7,13 @@ function loadFunction($http, $scope, structureService, $filter, $location) {
   //Register upper level modules
   structureService.registerModule($location, $scope, 'facebookfeed');
 
-  $http.get('https://graph.facebook.com/v2.4/' + $scope.facebookfeed.modulescope.pageid + '/posts', {
+  var moduleConfig = angular.copy($scope.facebookfeed.modulescope);
+
+  $scope.visualization = moduleConfig.visualization || 'card';
+
+  $http.get('https://graph.facebook.com/v2.4/' + moduleConfig.pageid + '/posts', {
     params: {
-      access_token: $scope.facebookfeed.modulescope.accesstoken,
+      access_token: moduleConfig.accesstoken,
       fields: 'object_id,message,link,full_picture,caption,updated_time,from'
     }
   })
