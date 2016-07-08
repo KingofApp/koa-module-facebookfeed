@@ -4,3 +4,9 @@
 .facebook-light span{
   float: right;
 }
+.postContainer {
+  border-bottom: 1px solid #CCC;
+}
+#contentIcon {
+  margin-right: 5px;
+}
