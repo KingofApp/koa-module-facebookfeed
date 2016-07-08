@@ -23,7 +23,6 @@ function loadFunction($http, $scope, structureService, $filter, $location) {
     angular.forEach(data, function(post) {
       post.updated_time = moment(post.updated_time).format($filter('translate')('facebookfeed.dateFormat'));
     });
-    console.log(data);
     return data;
   }
 
