@@ -1,19 +1,23 @@
 <div ng-controller="facebookFeedCtrl" class="module facebookfeed">
-  <koa-item ng-if="facebookfeed.message">{{facebookfeed.message}}</koa-item>
-  <koa-card ng-if="visualization !== 'list'" image="{{item.full_picture}}" ng-repeat="item in facebookfeed.items">
-    <div class="card-content">
-      <p class="facebook-light">{{item.from.name}}
-      <span>{{item.updated_time}}</p>
-      <p>{{item.message}}</p>
-    </div>
-  </koa-card>
+    <koa-item ng-if="facebookfeed.message">{{facebookfeed.message}}</koa-item>
+    <koa-grid cell-space="5px" columns="1" ng-if="!isBusy && visualization !== 'list'">
+      <koa-card image="{{item.full_picture}}" ng-repeat="item in facebookfeed.items">
+        <div class="card-content">
+          <p class="facebook-light">{{item.from.name}}
+          <span>{{item.updated_time}}</p>
+          <h3 ng-if="item.type == 'link'">{{item.name}}</h3>
+          <p>{{item.message || item.description}}</p>
+        </div>
+      </koa-card>
+    </koa-grid>
 
-  <koa-item ng-if="visualization === 'list'" class="postContainer" ng-repeat="item in facebookfeed.items">
-    <img class="featuredImage" src="{{item.full_picture}}" item-icon />
-    <koa-item-body two-line>
-      <div>{{item.from.name | cleanHex}} | {{item.updated_time}}</div>
-      <div secondary>{{item.message}}</div>
-    </koa-item-body>
-  </koa-item>
+    <koa-item ng-if="visualization === 'list'" class="postContainer" ng-repeat="item in facebookfeed.items">
+      <img class="featuredImage" src="{{item.full_picture}}" item-icon />
+      <koa-item-body two-line>
+        <div>{{item.from.name | cleanHex}} | {{item.updated_time}}</div>
+        <div secondary>{{item.message}}</div>
+        <div secondary ng-if="item.type == 'link'">{{item.name}}</div>
+      </koa-item-body>
+    </koa-item>
 
 </div>
