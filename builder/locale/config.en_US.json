@@ -8,5 +8,6 @@
   "error_id_token": "Error in the AppId or App Secret. Reload and try again.",
   "data_received": "Data received.",
   "service_created": "Push service created.",
-  "finished": "Finished"
+  "finished": "Finished",
+  "obtain_token": "Obtain Token"
 }

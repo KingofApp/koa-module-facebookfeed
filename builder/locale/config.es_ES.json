@@ -8,5 +8,6 @@
   "error_id_token": "Error con el id o el secreto de la aplicación. Recarga y prueba otra vez.",
   "data_received": "Datos recibidos.",
   "service_created": "Servicio push creado.",
-  "finished": "Terminado"
+  "finished": "Terminado",
+  "obtain_token": "Obtener Token"
 }
