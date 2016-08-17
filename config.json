@@ -72,6 +72,16 @@
         {"name": "List", "value": "list" }
       ]
     }
+  }, {
+    "type": "frame",
+    "templateOptions": {
+      "url": "/modules/facebookfeed/builder/#/config",
+      "label": "Iframe config button",
+      "buttonText": "Config Service",
+      "description": "",
+      "width": "",
+      "height": ""
+    }
   }],
   "showOn": {
     "menu": true,
