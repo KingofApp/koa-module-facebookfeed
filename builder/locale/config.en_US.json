@@ -1,0 +1,13 @@
+{
+  "main_title": "Facebook token config",
+  "status": "Status",
+  "receiving": "Receiving Data",
+  "configuring": "Configuring",
+  "finishing": "Finishing",
+  "error": "Unexpected error. Reload the page and try again",
+  "error_id_token": "Error in the AppId or App Secret. Reload and try again.",
+  "data_received": "Data received.",
+  "service_created": "Push service created.",
+  "finished": "Finished",
+  "obtain_token": "Obtain Token"
+}

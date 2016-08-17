@@ -1,0 +1,53 @@
+<div class="row">
+  <h4>{{"status" | translate}}:</h4>
+  <div class="col s12">
+    <ul class="tabs z-depth-1">
+      <li class="tab col s3" ng-class="menuActive == 'receiving' ? 'active' : 'disabled'"><span>{{"receiving" | translate}}</span></li>
+      <li class="tab col s3" ng-class="menuActive == 'config' ? 'active' : 'disabled'"><span>{{"configuring" | translate}}</span></li>
+      <li class="tab col s3" ng-class="menuActive == 'finish' ? 'active' : 'disabled'"><span>{{"finishing" | translate}}</span></li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div ng-if="!showLoader && menuActive == 'config' && !error" class="section">
+    <form class="col s12 ng-pristine ng-valid" ng-submit="config()">
+      <div class="input-field col s6">
+        <label for="appId">App Id</label><br>
+        <input ng-model="formData.appId" name="appId" id="appId" type="text" class="ng-pristine ng-valid ng-touched">
+      </div>
+      <div class="input-field col s6">
+        <label for="appSecret">App Secret</label><br>
+        <input ng-model="formData.appSecret" name="appSecret" id="appSecret" type="text" class="ng-pristine ng-valid ng-touched">
+      </div>
+      <div class="input-field col s12">
+        <button class="btn input-center waves-effect waves-light ng-binding" type="submit">{{"obtain_token" | translate}}</button>
+      </div>
+    </form>
+  </div>
+
+    <div ng-if="showLoader && !error" class="centerdiv">
+      <div class="preloader-wrapper big center max active">
+        <div class="spinner-layer spinner-red-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div ng-if="!showLoader && !error" class="card-panel">
+      <h5 class="truncate success" translate="{{message}}"></h5>
+    </div>
+
+    <div ng-if="error" class="card-panel">
+      <h5 class="truncate error" translate="{{errorMsg}}"></h5>
+    </div>
+
+
+  </div>
+</div>

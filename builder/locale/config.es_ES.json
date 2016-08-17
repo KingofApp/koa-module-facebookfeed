@@ -1,0 +1,13 @@
+{
+  "main_title": "Configuración facebook token",
+  "status": "Estado",
+  "receiving": "Recibiendo datos",
+  "configuring": "Configurando",
+  "finishing": "Terminando",
+  "error": "Error inesperado. Recarga la página y vuelve a intentarlo.",
+  "error_id_token": "Error con el id o el secreto de la aplicación. Recarga y prueba otra vez.",
+  "data_received": "Datos recibidos.",
+  "service_created": "Servicio push creado.",
+  "finished": "Terminado",
+  "obtain_token": "Obtener Token"
+}
