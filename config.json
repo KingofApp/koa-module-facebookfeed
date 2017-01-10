@@ -75,7 +75,7 @@
   }, {
     "type": "frame",
     "templateOptions": {
-      "url": "/modules/facebookfeed/builder/#/config",
+      "url": "/modules/facebookfeed/builder/index.html#/config",
       "label": "Iframe config button",
       "buttonText": "Config Service",
       "description": "",
