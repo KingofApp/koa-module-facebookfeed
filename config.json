@@ -2,20 +2,20 @@
   "name": "Facebook Feed",
   "identifier": "facebookfeed",
   "description": {
-    "es-ES": "Activando este módulo cargarás todo cuanto publiques en Facebook para que tu seguidores lo puedan ver directamente en tu App. Para ello, tendrás que entrar la url de la página de Facebook que quieras compartir. P.e. https://www.facebook.com/pages/King-Of-App así como el AccessToken; para ello deberás acceder a https://developers.facebook.com.",
-    "en-US": "Activando este módulo cargarás todo cuanto publiques en Facebook para que tu seguidores lo puedan ver directamente en tu App. Para ello, tendrás que entrar la url de la página de Facebook que quieras compartir. P.e. https://www.facebook.com/pages/King-Of-App así como el AccessToken; para ello deberás acceder a https://developers.facebook.com."
+    "es-ES": "Sincroniza tus publicaciones en Facebook para que se puedan visualizar directamente en tu app utilizando este módulo. Tus seguidores estarán siempre informados con las novedades de tu servicio!",
+    "en-US": "Use this module to sync your Facebook posts so that they can be viewed directly in your app. Your followers will always be informed with the news of your service!"
   },
   "documentation": {
     "es-ES": "modules/facebookfeed/documentation/es_ES.md",
     "en-US": "modules/facebookfeed/documentation/en_US.md"
   },
   "descriptionShort": {
-    "es-ES": "Carga todo cuanto publiques en Facebook para que tus seguidores lo vean directamente en tu App.",
-    "en-US": "Carga todo cuanto publiques en Facebook para que tus seguidores lo vean directamente en tu App."
+    "es-ES": "Sincroniza tus publicaciones en Facebook con tu app!",
+    "en-US": "Show your Facebook posts to your audience through your App."
   },
   "icon": "facebook",
   "type": "A",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "author": "King of App",
   "category": [
     "others"
