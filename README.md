@@ -22,3 +22,9 @@ A continuación podremos ejecutar el botón Config Service y seguir los pasos.
 
 
 ¿Fácil, verdad?
+
+### Details:
+
+- Author: King of app
+- Version: 1.0.12
+- Homepage:
