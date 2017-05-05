@@ -1,6 +1,6 @@
 {
   "name": "koapp-module-facebookfeed",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Carga todo cuanto publiques en Facebook para que tus seguidores lo vean directamente en tu App.",
   "directories": {
     "test": "test"
@@ -31,7 +31,7 @@
     "jsesc": "^2.2.0",
     "protractor": "^2.0.0"
   },
-  "author": "King of App",
+  "author": "Koapp <koappnpmpublisher@gmail.com> (http://www.kingofapp.com)",
   "license": "MIT",
   "keywords": [
     "koapp",
