@@ -1,100 +1,112 @@
 {
-  "name": "Facebook Feed",
-  "identifier": "facebookfeed",
-  "description": {
-    "es-ES": "Sincroniza tus publicaciones en Facebook para que se puedan visualizar directamente en tu app utilizando este módulo. Tus seguidores estarán siempre informados con las novedades de tu servicio!",
-    "en-US": "Use this module to sync your Facebook posts so that they can be viewed directly in your app. Your followers will always be informed with the news of your service!"
-  },
-  "documentation": {
-    "es-ES": "modules/facebookfeed/documentation/es_ES.md",
-    "en-US": "modules/facebookfeed/documentation/en_US.md"
-  },
-  "descriptionShort": {
-    "es-ES": "Sincroniza tus publicaciones en Facebook con tu app!",
-    "en-US": "Show your Facebook posts to your audience through your App."
-  },
-  "icon": "facebook",
-  "type": "A",
-  "version": "1.0.13",
-  "author": "King of App",
-  "category": [
-    "others"
-  ],
-  "price": 0,
-  "subscription": false,
-  "canContain": false,
-  "platforms": [
-    "android",
-    "ios",
-    "windows"
-  ],
-  "view": "modules/facebookfeed/index.html",
-  "files": [
-    "modules/facebookfeed/controller.js",
-    "modules/facebookfeed/style.css"
-  ],
-  "libs": [
-    {
-      "bower": { "moment": "^2.11.2" },
-      "src": "bower_components/moment/moment.js"
-    }
-  ],
-  "scope": {
-    "accesstoken": "",
-    "pageid": "",
-    "visualization": "card"
-  },
-  "config": [{
-    "templateOptions": {
-      "label": "accesstoken",
-      "required": true,
-      "description": "token de acceso"
+    "name": "Facebook Feed",
+    "identifier": "facebookfeed",
+    "description": {
+        "es-ES": "Sincroniza tus publicaciones en Facebook para que se puedan visualizar directamente en tu app utilizando este módulo. Tus seguidores estarán siempre informados con las novedades de tu servicio!",
+        "en-US": "Use this module to sync your Facebook posts so that they can be viewed directly in your app. Your followers will always be informed with the news of your service!"
     },
-    "type": "input",
-    "key": "accesstoken"
-  }, {
-    "key": "pageid",
-    "templateOptions": {
-      "label": "pageid",
-      "required": true,
-      "description": "id de la pagina"
+    "documentation": {
+        "es-ES": "modules/facebookfeed/documentation/es_ES.md",
+        "en-US": "modules/facebookfeed/documentation/en_US.md"
     },
-    "type": "input"
-  },
-  {
-    "type": "select",
-    "key": "visualization",
-    "templateOptions": {
-      "description": "Select type of visualization",
-      "label": "visualization",
-      "options": [
-        {"name": "Card", "value": "card" },
-        {"name": "List", "value": "list" }
-      ]
-    }
-  }, {
-    "type": "frame",
-    "templateOptions": {
-      "url": "/modules/facebookfeed/builder/index.html#/config",
-      "label": "Iframe config button",
-      "buttonText": "Config Service",
-      "description": "",
-      "width": "",
-      "height": ""
-    }
-  }],
-  "showOn": {
-    "menu": true,
-    "market": true,
-    "dragDrop": true
-  },
-  "images": {
-    "list": "modules/facebookfeed/images/facebook_list.png",
-    "screenshots": [
-      "modules/facebookfeed/images/facebookfeed_screenshot01.png"
+    "descriptionShort": {
+        "es-ES": "Sincroniza tus publicaciones en Facebook con tu app!",
+        "en-US": "Show your Facebook posts to your audience through your App."
+    },
+    "icon": "facebook",
+    "type": "A",
+    "version": "1.0.14",
+    "author": "King of App",
+    "category": [
+        "others"
     ],
-    "popover": "modules/facebookfeed/images/facebook_popover.png",
-    "banner": "modules/facebookfeed/images/facebook_popover.png",
-    "logo": "modules/facebookfeed/images/Facebook_icon.png"
-  }
+    "price": 0,
+    "subscription": false,
+    "canContain": false,
+    "platforms": [
+        "android",
+        "ios",
+        "windows"
+    ],
+    "view": "modules/facebookfeed/index.html",
+    "files": [
+        "modules/facebookfeed/controller.js",
+        "modules/facebookfeed/style.css"
+    ],
+    "libs": [
+        {
+            "bower": {
+                "moment": "^2.11.2"
+            },
+            "src": "bower_components/moment/moment.js"
+        }
+    ],
+    "scope": {
+        "accesstoken": "",
+        "pageid": "",
+        "visualization": "card"
+    },
+    "config": [
+        {
+            "templateOptions": {
+                "label": "accesstoken",
+                "required": true,
+                "description": "token de acceso"
+            },
+            "type": "input",
+            "key": "accesstoken"
+        },
+        {
+            "key": "pageid",
+            "templateOptions": {
+                "label": "pageid",
+                "required": true,
+                "description": "id de la pagina"
+            },
+            "type": "input"
+        },
+        {
+            "type": "select",
+            "key": "visualization",
+            "templateOptions": {
+                "description": "Select type of visualization",
+                "label": "visualization",
+                "options": [
+                    {
+                        "name": "Card",
+                        "value": "card"
+                    },
+                    {
+                        "name": "List",
+                        "value": "list"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "frame",
+            "templateOptions": {
+                "url": "/modules/facebookfeed/builder/index.html#/config",
+                "label": "Iframe config button",
+                "buttonText": "Config Service",
+                "description": "",
+                "width": "",
+                "height": ""
+            }
+        }
+    ],
+    "showOn": {
+        "menu": true,
+        "market": true,
+        "dragDrop": true
+    },
+    "images": {
+        "list": "modules/facebookfeed/images/facebook_list.png",
+        "screenshots": [
+            "modules/facebookfeed/images/facebookfeed_screenshot01.png"
+        ],
+        "popover": "modules/facebookfeed/images/facebook_popover.png",
+        "banner": "modules/facebookfeed/images/facebook_popover.png",
+        "logo": "modules/facebookfeed/images/Facebook_icon.png"
+    }
 }
