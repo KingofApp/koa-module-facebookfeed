@@ -35,9 +35,9 @@ function configController($q, $scope, $translatePartialLoader, $translate, $http
 
     if($scope.formData.appId && $scope.formData.appSecret){
       obtainToken().then(function(response) {
-        console.log(response.data);
-        if(response.data.indexOf("access_token=") != -1){
-          data.plugin.scope.accesstoken = response.data.replace("access_token=", "");
+        var result = response.data;
+        if(result['access_token']){
+          data.plugin.scope.accesstoken = result['access_token'];
           nextStep();
         }else {
           errorCallback("error access_token not found");
@@ -59,6 +59,7 @@ function configController($q, $scope, $translatePartialLoader, $translate, $http
         'grant_type': 'client_credentials'
       }
     };
+
     return $http.get('https://graph.facebook.com/oauth/access_token', config);
   }
   function finishConfig() {
